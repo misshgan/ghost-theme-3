@@ -1,12 +1,49 @@
 {{!< default}}
 
 <div class="hz-wrapper">
-	<div class="hz-frame site-cover" style="background: red;">
+	<div class="hz-frame site-cover">
 		{{#if @site.cover_image}}
 			<div class="site-cover__logo">
 				<img src="{{@site.cover_image}}" alt="site logo">
 			</div>
+			
+			<style>
+				.site-cover__title {
+					color: #fff;
+				}
+				.site-cover__description {
+					color: rgb(208, 208, 208);
+				}
+				.arrow {
+					border-color: #fff;
+				}
+				.scroll-to-more {
+					color: rgb(208, 208, 208);
+				}
+			</style>
+		{{else}}
+			<style>
+				.site-cover__title {
+					color: #000;
+				}
+				.site-cover__description {
+					color: rgb(39, 39, 39);
+				}
+				.arrow {
+					border-color: #000;
+				}
+				.scroll-to-more {
+					color: #000
+				}
+			</style>
 		{{/if}}
+		<div class="site-cover__text">
+				<h1 class="site-cover__title">{{@site.title}}</h1>
+				<p class="site-cover__description">{{@site.description}}</p>
+			</div>
+		<div class="arrow"></div>
+		<span class="scroll-to-more">Scroll down to see more...</span>
+	
 	</div>
 	<div class="hz-frame" style="background: green;">Two</div>
 	<div class="hz-frame" style="background: blue;">Three</div>

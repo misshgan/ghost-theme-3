@@ -1,0 +1,21 @@
+.hz-wrapper {
+	width: 600% !important;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+html, body, .hz-wrapper, .hz-frame {
+	height: 100%;
+}
+
+.hz-frame {
+	width: 100%;
+}
+
+.site-cover {
+
+	&__logo {
+		
+	}
+}
+

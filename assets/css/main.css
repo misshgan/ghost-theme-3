@@ -1,0 +1,100 @@
+/*
+0 - 600 : Phone
+600 - 900 : Tablet portrait 
+900 - 1200 : Tablet landscape
+[1200 - 1800] : is where aor normal styles apply
+1800 + : big screens 
+$breakpoint argument choises
+- phone 
+- tab-port
+- tab-land
+- big-desktop
+1em = 16px
+ORDER: Base + typography > general layout + grid > page layout > components 
+*/
+html {
+  font-size: 62.5% !important;
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25% !important;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50% !important;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75% !important;
+  }
+}
+
+body {
+  background: #F2F4F7;
+}
+
+.margin-15 {
+  margin: 0 1.5%;
+}
+
+.bull {
+  margin: 0 3px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #fff;
+  width: 100%;
+}
+
+.header__logo {
+  max-height: 6rem;
+}
+
+.header__logo-img {
+  max-height: 100%;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__nav a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #232E52;
+}
+.header__nav li:not(:last-child) {
+  margin-right: 5rem;
+}
+.header__nav ul {
+  display: flex;
+}
+
+.hz-wrapper {
+  width: 600% !important;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+html, body, .hz-wrapper, .hz-frame {
+  height: 100%;
+}
+
+.hz-frame {
+  width: 100%;
+}

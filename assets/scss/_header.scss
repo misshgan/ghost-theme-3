@@ -1,0 +1,42 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem 4rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background: #fff;
+	width: 100%;
+}
+.header__logo {
+	max-height: 6rem;
+}
+.header__logo-img {
+	max-height: 100%;
+}
+.header__nav {
+	display: flex;
+	align-items: center;
+
+	& a {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
+		font-size: 1.8rem;
+		line-height: 120%;
+
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-decoration: none;
+
+		color: #232E52;
+	}
+
+	& li:not(:last-child) {
+		margin-right: 5rem;
+	}
+
+	& ul {
+		display: flex;
+	}
+}

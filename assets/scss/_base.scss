@@ -1,0 +1,119 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 600 : Phone
+600 - 900 : Tablet portrait 
+900 - 1200 : Tablet landscape
+[1200 - 1800] : is where aor normal styles apply
+1800 + : big screens 
+$breakpoint argument choises
+- phone 
+- tab-port
+- tab-land
+- big-desktop
+1em = 16px
+ORDER: Base + typography > general layout + grid > page layout > components 
+*/
+@mixin respond($breakpoint) {
+	@if $breakpoint ==500px {
+		@media only screen and (max-width: 31.2em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==600px {
+		@media only screen and (max-width: 37.5em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==700px {
+		@media only screen and (max-width:  43.7em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==800px {
+		@media only screen and (max-width:  50em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==900px {
+		@media only screen and (max-width: 56.25em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==1000px {
+		@media only screen and (max-width: 62.5em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==1200px {
+		@media only screen and (max-width: 75em) {
+			@content
+		}
+
+		;
+	}
+
+	@if $breakpoint ==big-desktop {
+		@media only screen and (min-width: 112.5em) {
+			// 1800px
+			@content
+		}
+
+		;
+	}
+}
+
+html {
+	// This defines what 1 rem is 
+	font-size: 62.5% !important; // 1rem = 10px; 10px/16px = 62.5%
+
+	@include respond(1200px) {
+		font-size: 56.25% !important; // 1 rem = 9 px; 9/16px = 56.25%
+	}
+
+	@include respond(900px) {
+		font-size: 50% !important; // 1 rem = 8px; 8/16px = 50% 
+	}
+
+	@include respond(big-desktop) {
+		font-size: 75% !important; // 1rem = 12px; 12/16px = 75%
+	}
+
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #F2F4F7;
+}
+
+.margin-15 {
+	margin: 0 1.5%;
+	
+}
+
+.bull {
+	margin: 0 3px;
+}
+
+// * {
+// 	&::-webkit-scrollbar {
+// 		display: none;
+// 	  }
+// }

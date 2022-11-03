@@ -92,7 +92,7 @@ body {
 }
 
 .hz-wrapper {
-  width: 600% !important;
+  width: 300% !important;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -194,7 +194,6 @@ html, body, .hz-wrapper, .hz-frame {
 .hz-featured-post__text {
   height: 80%;
   width: 40%;
-  margin-right: 5rem;
   display: flex;
   flex-direction: column;
 }
@@ -247,12 +246,12 @@ html, body, .hz-wrapper, .hz-frame {
   text-decoration: none;
   color: #000;
 }
-.hz-featured-post .hz-featured-post__buttons {
+.hz-featured-post__buttons {
   display: flex;
   align-items: center;
   margin-top: auto;
 }
-.hz-featured-post .hz-featured-post__button {
+.hz-featured-post__button {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
@@ -264,10 +263,16 @@ html, body, .hz-wrapper, .hz-frame {
   padding: 1.2rem 2rem;
   transition: all 0.3s;
 }
-.hz-featured-post .hz-featured-post__button:not(:last-child) {
+.hz-featured-post__button:not(:last-child) {
   margin-right: 2rem;
 }
-.hz-featured-post .hz-featured-post__button:hover {
+.hz-featured-post__button:hover {
   background-color: #000;
   color: #fff;
+}
+
+.hz-selected-post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

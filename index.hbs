@@ -57,7 +57,7 @@
 						<img src="/woocommerce-placeholder-1170x1170.png" alt="post image">
 					</div>
 				{{/if}}
-					<div class="hz-featured-post__text">
+					<div class="hz-featured-post__text" style="margin-right: 5rem;">
 						<div class="hz-featured-post__tags-author-date">
 							<div class="hz-featured-post__tags">{{tags}}</div>
 							<span class="bull">&bull;</span>
@@ -77,11 +77,42 @@
 			{{/foreach}}
 		{{/get}}
 	</div>
-	<div class="hz-frame" style="background: blue;">Three</div>
-	<div class="hz-frame" style="background: yellow;">Four</div>
-	<div class="hz-frame" style="background: violet;">Five</div>
-	<div class="hz-frame" style="background: brown;">Six</div>
+	<div class="hz-frame hz-selected-post">
+		{{#get "posts" include="tags, authors" filter="tag:daily-digest" limit="1"}}
+			{{#foreach posts}}
+				
+					<div class="hz-featured-post__text" style="margin-left: 5rem;">
+						<div class="hz-featured-post__tags-author-date">
+							<div class="hz-featured-post__tags">{{tags}}</div>
+							<span class="bull">&bull;</span>
+							<div class="hz-featured-post__date">{{date}}</div>
+							<span class="bull">&bull;</span>
+							<div class="hz-featured-post__author">{{authors}}</div>
+						</div>
+						<div class="hz-featured-post__title">{{title}}</div>
+						<div class="hz-featured-post__content">{{content}}</div>
+						
+						<div class="hz-featured-post__buttons">
+							<a href="{{url}}" class="hz-featured-post__button">Read this post</a>
+							{{!-- <a href="#" class="hz-featured-post__button">See all featured posts</a> --}}
+						</div>
+					</div>
+
+					{{#if feature_image}}
+						<div class="hz-featured-post__img">
+							<img src="{{feature_image}}" alt="post image">
+						</div>
+					{{else}}
+						<div class="hz-featured-post__img">
+							<img src="/woocommerce-placeholder-1170x1170.png" alt="post image">
+						</div>
+					{{/if}}
+					
+			{{/foreach}}
+		{{/get}}
+	</div>
 </div>
+
 
 
 

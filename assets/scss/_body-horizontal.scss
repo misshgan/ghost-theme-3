@@ -1,5 +1,5 @@
 .hz-wrapper {
-	width: 600% !important;
+	width: 300% !important;
 	display: flex;
 	flex-wrap: nowrap;
 }
@@ -109,7 +109,6 @@ html, body, .hz-wrapper, .hz-frame {
 	&__text {
 		height: 80%;
 		width: 40%;
-		margin-right: 5rem;
 		display: flex;
     	flex-direction: column;
 	}
@@ -174,12 +173,12 @@ html, body, .hz-wrapper, .hz-frame {
 		color: #000;
 	}
 
-	.hz-featured-post__buttons {
+	&__buttons {
 		display: flex;
 		align-items: center;
 		margin-top: auto;
 	}
-	.hz-featured-post__button {
+	&__button {
 		font-family: 'Raleway', sans-serif;
 		font-weight: 400;
 		font-size: 1.8rem;
@@ -203,6 +202,12 @@ html, body, .hz-wrapper, .hz-frame {
 			color: #fff;
 		}
 	}
+}
+
+.hz-selected-post {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 

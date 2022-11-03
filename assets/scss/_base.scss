@@ -109,7 +109,8 @@ body {
 }
 
 .bull {
-	margin: 0 3px;
+	margin: 0 1rem;
+	padding-bottom: 4px;
 }
 
 // * {
@@ -117,3 +118,7 @@ body {
 // 		display: none;
 // 	  }
 // }
+
+.gh-portal-triggerbtn-iframe {
+	display: none !important;
+}

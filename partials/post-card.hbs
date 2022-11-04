@@ -1,0 +1,23 @@
+<article class="post-card">
+	<div class="post-card__text">
+		<div class="post-card__text-header">
+			{{#if tags}}
+			<div class="post-card__tags">{{tags}}</div>
+			<span class="bull" style="padding-bottom: 0;">&bull;</span>
+			{{/if}}
+			<div class="post-card__date">{{date}}</div>
+		</div>
+		<h3 class="post-card__title"><a href="{{url}}">{{title}}</a></h3>
+		<div class="post-card__content">{{content}}</div>
+		<div class="post-card__read-post"><a href="{{url}}">Read this post...</a></div>
+	</div>
+	{{#if feature_image}}
+		<div class="post-card__image">
+			<img src="{{feature_image}}" alt="post image">
+		</div>
+	{{else}}
+		<div class="post-card__image">
+			<img src="/woocommerce-placeholder-1170x1170.png" alt="post image">
+		</div>
+	{{/if}}
+</article>

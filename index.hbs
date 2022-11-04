@@ -117,12 +117,12 @@
 	<div class="recent-posts">
 		<div class="recent-posts__header">
 			<div class="recent-posts__title">Recent posts</div>
-			<div class="recent-posts__see-all">See all...</div>
+			{{!-- <div class="recent-posts__see-all">See all...</div> --}}
 		</div>
 		<div class="recent-posts__body">
-			{{#get posts include="tags, authors"}}
+			{{#get "posts" include="tags, authors" }}
 				{{#foreach posts}}
-					{{> "post-card"}}
+					{{> post-card}}
 				{{/foreach}}
 			{{/get}}
 		</div>

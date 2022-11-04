@@ -49,13 +49,28 @@ body {
   display: none !important;
 }
 
+.footer {
+  padding: 5rem 0;
+  max-width: 1140px;
+  border-top: 1px solid rgb(47, 47, 47);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.copy {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 120%;
+  color: #000;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 5rem;
-  position: fixed;
-  top: 0;
-  left: 0;
   z-index: 100;
   background: #fff;
   width: 100%;
@@ -285,6 +300,8 @@ html, body, .hz-wrapper, .hz-frame {
 .recent-posts__header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
+  align-items: flex-end;
 }
 .recent-posts__title {
   font-family: "Raleway", sans-serif;
@@ -300,4 +317,84 @@ html, body, .hz-wrapper, .hz-frame {
   font-size: 2rem;
   line-height: 120%;
   text-decoration: none;
+}
+.post-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5rem 0;
+  border-top: 1px solid #EBF2FE;
+}
+.post-card__text {
+  max-width: 61rem;
+  display: flex;
+  flex-direction: column;
+}
+.post-card__text-header {
+  display: flex;
+  align-items: flex-end;
+}
+.post-card__tags a {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 120%;
+  color: rgb(109, 109, 109);
+  text-decoration: none;
+}
+.post-card__date {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 120%;
+  color: rgb(109, 109, 109);
+  text-decoration: none;
+}
+.post-card__title {
+  margin: 2.5rem 0 1.2rem 0;
+}
+.post-card__title a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 120%;
+  color: #000;
+  text-decoration: none;
+}
+.post-card__content {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 120%;
+  color: rgb(109, 109, 109);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.post-card__content hr {
+  display: none;
+}
+.post-card__image {
+  width: 30rem;
+  height: 20rem;
+}
+.post-card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.post-card__read-post {
+  margin-top: 1.5rem;
+}
+.post-card__read-post a {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 120%;
+  color: var(--ghost-accent-color);
+  text-decoration: underline;
 }

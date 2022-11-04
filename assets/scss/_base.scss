@@ -122,3 +122,22 @@ body {
 .gh-portal-triggerbtn-iframe {
 	display: none !important;
 }
+
+.footer {
+	padding: 5rem 0;
+	max-width: 1140px;
+	border-top: 1px solid rgb(47, 47, 47);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+.copy {
+
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 120%;
+
+	color: #000;
+}

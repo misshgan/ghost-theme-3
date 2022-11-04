@@ -6,6 +6,8 @@
 	&__header {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 2rem;
+		align-items: flex-end;
 	}
 	&__title {
 		font-family: 'Raleway', sans-serif;
